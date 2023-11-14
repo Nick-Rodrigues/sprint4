@@ -1,7 +1,7 @@
 export default cabecalho {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
+      <header className={inter.className}>{children}</header>
     </html>
   );
 }
