@@ -1,5 +1,5 @@
 export async function POST(request, response){
-
+    try{
 
         const userRequest = await request.json();
         
@@ -22,5 +22,7 @@ export async function POST(request, response){
             
         return NextResponse.json(userRequest);
         
-    
+    } catch (error){
+        return NextResponse.json(null)
+    }
 }
