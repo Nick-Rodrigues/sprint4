@@ -1,0 +1,46 @@
+{
+    "usuarios": [
+        {   
+            "id": 1,
+            "login":"Nicolas",
+            "nome": "Nicolas",
+            "senha": "123",
+            "email": "nicolas@gmail.com",
+            "cpf": "12345678901",
+            "rg": "123456789",
+            "nascimento": "09/02/2002",
+            "cep": "90060140",
+            "marca": "Caloi",
+            "nodelo": "Caloi 10",
+            "nf": "896321"
+        },
+        {
+            "id": 2,
+            "login":"Ana",
+            "nome": "Ana",
+            "senha": "abc456",
+            "email": "ana@yahoo.com",
+            "cpf": "98765432109",
+            "rg": "987654321",
+            "nascimento": "15/07/1990",
+            "cep": "70050120",
+            "marca": "Trek",
+            "modelo": "Trek FX",
+            "nf": "765432"
+            },
+            {
+            "id": 3,
+            "login":"Lucia",
+            "nome": "Lucia",
+            "senha": "xyz789",
+            "email": "lucia@hotmail.com",
+            "cpf": "34567890123",
+            "rg": "345678901",
+            "nascimento": "22/11/1985",
+            "cep": "80020030",
+            "marca": "Giant",
+            "modelo": "Giant Anthem",
+            "nf": "123789"
+            }
+    ]
+}
