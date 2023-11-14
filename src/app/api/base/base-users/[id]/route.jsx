@@ -23,6 +23,18 @@ export async function POST(request, response){
   
     const userRequest = await request.json();
   
-    
+    try {
+      for (let x = 0; x < lista.usuarios.length; x++) {
+        const userLista = lista.usuarios[x];
+  
+        if(userLista.email == userRequest.email && userLista.senha == userRequest.senha){
+          return NextResponse.json({"status":true,"user":userLista});      
+        }
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  
+    return NextResponse.json({"status":false});
   
   }
