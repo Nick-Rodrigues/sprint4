@@ -14,6 +14,16 @@ export default function etapas() {
                         aprovado ou não.
                     </p>
             </div>
+            <div>
+                <h2 className="titulo-etapas">Sistema de avaliação</h2>
+                    <p className="texto-etapas">
+                        Nosso sistema de avaliação é feio com base em fotos que pedimos de
+                        sua bicicleta, verificamos a integridade dessas fotos para não
+                        sofrermos fraudes, e após tudo estar correto verificamos se você é
+                        elegivel para finalizar a etapa da contratação do seguro.
+                    </p>
+            </div>
+
             
 
     </div>
