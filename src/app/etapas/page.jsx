@@ -24,7 +24,18 @@ export default function etapas() {
                     </p>
             </div>
 
-            
+            <div>
+                <h2 className="titulo-etapas">Utilização do rastreador</h2>
+                    <p className="texto-etapas">
+                        A ideia do rastreador consiste nele ser enviado ao cliente após a
+                        confirmação de contratação dos serviços, ao receber e ser instalado
+                        o cliente contata a empresa para ativação do localizador. A partir
+                        daí esse objeto não pode ser removido e servirá como uma condição
+                        nas imagens e garantir que as fotos tiradas são da bicicleta do
+                        seguro. Se, por acaso houver a remoção do tal, a empresa será
+                        notificada imediatamente para contatar o segurador.
+                    </p>
+            </div>
 
     </div>
     </>
