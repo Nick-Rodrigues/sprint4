@@ -1,0 +1,26 @@
+.loginForms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 300px;
+}
+input {
+  margin: 5px 10px;
+  padding: 2px 2px;
+  border-radius: 30px;
+  border: 1px solid black;
+}
+legend {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.button {
+  text-align: center;
+}
+button {
+  padding: 5px 10px;
+  border-radius: 9px;
+}
