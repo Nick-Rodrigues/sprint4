@@ -7,10 +7,10 @@ export default function Home() {
   const navigate = useRouter();
 
   useEffect(() => {
-    if (sessionStorage.getItem("token-user") != null) {
-      navigate.refresh();
+    if (typeof window !== 'undefined' && sessionStorage.getItem("token-user") != null) {
+      navigate.replace('/');
     }
-  }, [navigate]);
+  }, [navigate]);
 
   return (
     <>

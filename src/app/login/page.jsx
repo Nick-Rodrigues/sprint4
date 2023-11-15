@@ -49,17 +49,18 @@ export default function Login() {
           const token =
             Math.random().toString(36).substring(2) +
             Math.random().toString(36).substring(2);
-          sessionStorage.setItem("token-user", token);
-
-          sessionStorage.setItem("obj-user", JSON.stringify(data.user));
-
-          setMsg("Usuário validado com sucesso!");
-
-          setTimeout(() => {
-            setMsg("");
-
-            navigate.push("/");
-          }, 3000);
+      
+          if (typeof window !== 'undefined') {
+            sessionStorage.setItem("token-user", token);
+            sessionStorage.setItem("obj-user", JSON.stringify(data.user));
+      
+            setMsg("Usuário validado com sucesso!");
+      
+            setTimeout(() => {
+              setMsg("");
+              navigate.push("/");
+            }, 3000);
+          }
         } else {
           setMsg("Usuário ou Senha inválidos!");
           setTimeout(() => {
@@ -68,8 +69,8 @@ export default function Login() {
               email: "",
               senha: "",
             });
-          }, 3000);
-        }
+          }, 3000);
+        }
       }
     } catch (error) {
       console.error(error);
