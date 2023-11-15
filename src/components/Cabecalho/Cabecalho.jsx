@@ -18,7 +18,7 @@ export default function Cabecalho() {
     return (
       <header className="cabecalho">
         <figure>
-          <Image
+          <Image className="logo"
             src="/logojano.jpg"
             alt="logo janos"
             width={400}

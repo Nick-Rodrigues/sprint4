@@ -1,4 +1,5 @@
 import Image from "next/image"
+import "./notfound.modules.css"
 
 export default function notFound() {
     return (

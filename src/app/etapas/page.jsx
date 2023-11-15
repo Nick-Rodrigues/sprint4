@@ -1,4 +1,5 @@
 import React from 'react'
+import "./etapas.modules.css"
 
 export default function etapas() {
   return (
