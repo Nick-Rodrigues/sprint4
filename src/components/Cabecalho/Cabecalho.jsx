@@ -1,8 +1,8 @@
-
 "use client";
 import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
+import "./cabecalho.modules.css";
 
 export default function Cabecalho() {
   const usuario = JSON.parse(sessionStorage.getItem("obj-user"));
@@ -18,8 +18,13 @@ export default function Cabecalho() {
     return (
       <header className="cabecalho">
         <figure>
-          <Image src="/logojano.jpg" alt="logo janos" width={400} height={390} />
-        </figure>       
+          <Image
+            src="/logojano.jpg"
+            alt="logo janos"
+            width={400}
+            height={390}
+          />
+        </figure>
         <nav>
           <a className="etapas" href="./etapas">
             <p>etapas</p>
@@ -37,8 +42,13 @@ export default function Cabecalho() {
     return (
       <header className="cabecalho">
         <figure>
-          <Image src="/logojano.jpg" alt="logo janos" width={400} height={390} />
-        </figure>  
+          <Image
+            src="/logojano.jpg"
+            alt="logo janos"
+            width={400}
+            height={390}
+          />
+        </figure>
         <nav>
           <ul>
             <li>
@@ -52,3 +62,4 @@ export default function Cabecalho() {
       </header>
     );
   }
+}

@@ -1,16 +1,16 @@
-"use client"
+"use client";
 
-import Router, { useRouter } from 'next/navigation';
+import Router, { useRouter } from "next/navigation";
 import { useEffect } from "react";
-
+import "./home.modules.css";
 export default function Home() {
   const navigate = useRouter();
 
   useEffect(() => {
-    if(sessionStorage.getItem("token-user") != null){
-       navigate.refresh();
-     }    
-   },[navigate]);
+    if (sessionStorage.getItem("token-user") != null) {
+      navigate.refresh();
+    }
+  }, [navigate]);
 
   return (
     <>

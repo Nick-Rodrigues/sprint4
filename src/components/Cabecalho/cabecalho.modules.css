@@ -1,0 +1,147 @@
+header {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+  justify-content: space-around;
+  height: 300px;
+}
+
+header nav {
+  display: flex;
+  gap: 29%;
+  margin: -2% 16% 0 0;
+  align-items: center;
+}
+
+header .logo {
+  width: 108px;
+  height: 108px;
+  flex-shrink: 0;
+  margin: 2% 0% 0 5%;
+}
+
+header nav .home {
+  width: 97px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #000;
+}
+header nav .etapas {
+  width: 108px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #000;
+}
+header nav .integrantes {
+  width: 159px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #000;
+}
+
+header p {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 4px 0 5px 0;
+}
+@media (max-width: 900px) {
+  .integrantes-main div {
+    flex-wrap: wrap;
+  }
+  header .logo {
+    width: 108px;
+    height: 108px;
+    flex-shrink: 0;
+    margin: 10% 0% 0 0%;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+    justify-content: center;
+    height: 300px;
+    align-content: center;
+    align-items: center;
+    gap: 15%;
+  }
+  header nav .integrantes {
+    width: 105px;
+    height: 39px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #000;
+  }
+  header p {
+    font-size: 20px;
+  }
+  header nav {
+    display: flex;
+    gap: 20%;
+    margin: -2% 10% 0 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header nav {
+    display: flex;
+    gap: 8%;
+    margin: -2% 10% 0 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header nav .home {
+    width: 85px;
+    height: 39px;
+  }
+}
+
+@media (max-width: 375px) {
+  header nav {
+    display: flex;
+    gap: 10%;
+    margin: -2% 10% 0 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header nav .etapas {
+    width: 93px;
+  }
+  header nav .integrantes {
+    width: 90px;
+    height: 39px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #000;
+  }
+  .home .etapas .integrantes {
+    padding: 10px 0;
+  }
+  header nav .integrantes {
+    width: 113px;
+  }
+  header nav {
+    display: flex;
+    gap: 3%;
+    margin: -2% 10% 0 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

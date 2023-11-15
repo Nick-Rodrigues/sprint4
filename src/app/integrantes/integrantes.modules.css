@@ -1,0 +1,60 @@
+.integrantes-main .subtitulo {
+  width: 257px;
+  height: 58px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #000;
+  color: #fff;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px 0 0 0;
+  margin: 77px auto;
+}
+
+.integrantes-main div img {
+  width: 170px;
+  height: 170px;
+  flex-shrink: 0;
+  margin: 10px;
+}
+
+.integrantes-main div figcaption {
+  width: 191px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #000;
+  color: #fff;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 5px 0 0 0;
+  text-align: center;
+  margin: 25px 0 0 0;
+}
+
+.integrantes-main div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  margin: 8% auto;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .integrantes-main {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 15px;
+    flex-direction: column;
+  }
+}

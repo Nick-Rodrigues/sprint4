@@ -1,0 +1,73 @@
+.etapas-main {
+  height: 476px;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 135px;
+  margin: 119px auto;
+  max-width: 1210px;
+}
+
+.caixaAlta {
+  width: 373px;
+  margin: 0px auto;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 10px;
+}
+
+.etapas-main div .titulo-etapas {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.etapas-main div .texto-etapas {
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media (max-width: 768px) {
+  .etapas-main {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 15px;
+  }
+  .caixaAlta {
+    width: 81%;
+  }
+}
+
+@media (max-width: 375px) {
+  .etapas-main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .caixaAlta {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+  }
+}
