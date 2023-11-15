@@ -1,7 +1,7 @@
 import React from 'react'
 import "./etapas.modules.css"
 
-export default function etapas() {
+export default function Etapas() {
   return (
     <>
     <div className="etapas-main">

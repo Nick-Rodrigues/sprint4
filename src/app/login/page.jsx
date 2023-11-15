@@ -3,7 +3,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import "./login.modules.css";
-export default function page() {
+
+export default function Login() {
   const navigate = useRouter();
 
   const [usuario, setUsuario] = useState({
