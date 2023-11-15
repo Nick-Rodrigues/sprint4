@@ -5,20 +5,26 @@ import Link from "next/link";
 import "./cabecalho.modules.css";
 
 export default function Cabecalho() {
-  const usuario = JSON.parse(sessionStorage.getItem("obj-user"));
+  const usuario =
+    typeof window !== "undefined"
+      ? JSON.parse(sessionStorage.getItem("obj-user"))
+      : null;
   const [userLogado] = useState(usuario);
 
   const handleLogout = () => {
-    sessionStorage.removeItem("obj-user");
-    sessionStorage.removeItem("token-user");
-    window.location.href = "/";
+    if (typeof window !== "undefined") {
+      sessionStorage.removeItem("obj-user");
+      sessionStorage.removeItem("token-user");
+      window.location.href = "/";
+    }
   };
 
-  if (sessionStorage.getItem("token-user") != null) {
+  if (userLogado) {
     return (
       <header className="cabecalho">
         <figure>
-          <Image className="logo"
+          <Image
+            className="logo"
             src="/logojano.jpg"
             alt="logo janos"
             width={400}
@@ -32,6 +38,9 @@ export default function Cabecalho() {
           <a className="integrantes" href="./integrantes">
             <p>integrantes</p>
           </a>
+          <a onClick={handleLogout} className="logout" href="./">
+            <p>Logout</p>
+          </a>
           <a className="cadastro" href="./cadastro">
             <p>cadastro</p>
           </a>
@@ -42,7 +51,7 @@ export default function Cabecalho() {
     return (
       <header className="cabecalho">
         <figure>
-          <Image
+          <Image className="logo"
             src="/logojano.jpg"
             alt="logo janos"
             width={400}
