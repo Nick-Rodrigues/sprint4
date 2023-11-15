@@ -43,6 +43,14 @@ header nav .integrantes {
   background: #000;
 }
 
+header nav .logout {
+  width: 159px;
+  height: 39px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #000;
+}
+
 header nav .cadastro {
   width: 159px;
   height: 39px;
