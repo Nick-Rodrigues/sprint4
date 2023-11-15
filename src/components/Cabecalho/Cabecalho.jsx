@@ -32,6 +32,9 @@ export default function Cabecalho() {
           <a className="integrantes" href="./integrantes">
             <p>integrantes</p>
           </a>
+          <a onClick={handleLogout} className="logout" href="./">
+            <p>Logout</p>
+          </a>
           <a className="cadastro" href="./cadastro">
             <p>cadastro</p>
           </a>
