@@ -1,4 +1,5 @@
 import Image from "next/image"
+import "./integrantes.modules.css"
 
 export default function Integrantes() {
   return (

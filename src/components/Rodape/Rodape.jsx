@@ -6,11 +6,11 @@ export default function Rodape() {
   return (
     <>
       <footer className="rodape">
-        <div className="w-96 m-auto">
+        <div className="footer">
           <figure>
             <figcaption></figcaption>
             <Link rel="noreferrer" href="https://github.com" target="_blank">
-              <Image src="/github.png" alt="Github" width={50} height={50} />
+              <Image className="instag" src="/github.png" alt="Github" width={50} height={50} />
             </Link>
           </figure>
           <figure>
@@ -20,7 +20,7 @@ export default function Rodape() {
               href="https://www.instagram.com/portoseguro/"
               target="_blank"
             >
-              <Image
+              <Image className="git-hub"
                 src="/instagram.png"
                 alt="Instagram"
                 width={50}

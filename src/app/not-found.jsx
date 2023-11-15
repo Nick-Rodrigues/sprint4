@@ -1,6 +1,7 @@
 import Image from "next/image"
+import "./notfound.modules.css"
 
-export default function notFound() {
+export default function NotFound() {
     return (
         <div className="erro404">
             <h1>OOPSS! 404</h1>
