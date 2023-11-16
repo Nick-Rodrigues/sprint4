@@ -1,28 +1,34 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import "./cabecalho.modules.css";
 
 export default function Cabecalho() {
-  const usuario =
-    typeof window !== "undefined"
-      ? JSON.parse(sessionStorage.getItem("obj-user"))
-      : null;
-  const [userLogado] = useState(usuario);
+  const [userLogado, setUserLogado] = useState(null);
 
+  useEffect(() => {
+    const usuario =
+      typeof window !== "undefined"
+        ? JSON.parse(sessionStorage.getItem("obj-user"))
+        : null;
+    setUserLogado(usuario);
+  }, []);
 
   const handleLogout = () => {
-    sessionStorage.removeItem("obj-user");
-    sessionStorage.removeItem("token-user");
-    window.location.href = "/";
+    if (typeof window !== "undefined") {
+      sessionStorage.removeItem("obj-user");
+      sessionStorage.removeItem("token-user");
+      window.location.href = "/";
+    }
   };
 
-  if (sessionStorage.getItem("token-user") != null) {
+  if (userLogado) {
     return (
       <header className="cabecalho">
         <figure>
-          <Image className="logo"
+          <Image
+            className="logo"
             src="/logojano.jpg"
             alt="logo janos"
             width={400}
@@ -37,7 +43,7 @@ export default function Cabecalho() {
             <p>integrantes</p>
           </a>
           <a onClick={handleLogout} className="logout" href="./">
-            <p>logout</p>
+            <p>Logout</p>
           </a>
           <a className="cadastro" href="./cadastro">
             <p>cadastro</p>
@@ -67,6 +73,6 @@ export default function Cabecalho() {
           </ul>
         </nav>
       </header>
-    );
-  }
+    );
+  }
 }
