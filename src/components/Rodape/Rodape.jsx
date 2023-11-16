@@ -9,7 +9,7 @@ export default function Rodape() {
         <div className="footer">
           <figure>
             <figcaption></figcaption>
-            <Link rel="noreferrer" href="https://github.com" target="_blank">
+            <Link rel="noreferrer" href="https://github.com/Nick-Rodrigues/sprint4" target="_blank">
               <Image className="instag" src="/github.png" alt="Github" width={50} height={50} />
             </Link>
           </figure>
