@@ -8,13 +8,12 @@ header {
 
 header nav {
   display: flex;
-  gap: 29%;
+  gap: 5%;
   margin: -2% 16% 0 0;
   align-items: center;
 }
 
 header .logo {
-
   width: 200px;
   height: 200px;
   flex-shrink: 0;
@@ -29,14 +28,14 @@ header nav .home {
   background: #000;
 }
 header nav .etapas {
-  width: 108px;
+  width: 59px;
   height: 39px;
   flex-shrink: 0;
   border-radius: 20px;
   background: #000;
 }
 header nav .integrantes {
-  width: 159px;
+  width: 92px;
   height: 39px;
   flex-shrink: 0;
   border-radius: 20px;
@@ -44,7 +43,7 @@ header nav .integrantes {
 }
 
 header nav .logout {
-  width: 159px;
+  width: 67px;
   height: 39px;
   flex-shrink: 0;
   border-radius: 20px;
@@ -52,18 +51,19 @@ header nav .logout {
 }
 
 header nav .cadastro {
-  width: 159px;
+  width: 76px;
   height: 39px;
   flex-shrink: 0;
   border-radius: 20px;
   background: #000;
+  font-size: 20px;
 }
 
 header p {
   color: #fff;
   text-align: center;
   font-family: Inter;
-  font-size: 24px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -90,14 +90,14 @@ header p {
     gap: 15%;
   }
   header nav .integrantes {
-    width: 105px;
+    width: 84px;
     height: 39px;
     flex-shrink: 0;
     border-radius: 20px;
     background: #000;
   }
   header p {
-    font-size: 20px;
+    font-size: 15px;
   }
   header nav {
     display: flex;
